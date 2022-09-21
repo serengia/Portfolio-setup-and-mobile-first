@@ -140,6 +140,7 @@ body {
   display: flex;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
   margin-top: 1rem;
 }
 
@@ -172,6 +173,10 @@ body {
 
   .header-text .part-2 {
     font-size: 3rem;
+  }
+
+  .header-description {
+    display: none;
   }
 }
 
