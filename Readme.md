@@ -44,7 +44,7 @@ You can [ learn more here>>](https://stylelint.io/user-guide/usage/cli/#autofixi
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://serengia.github.io/Portfolio-setup-and-mobile-first/)
 
 ## Authors
 
