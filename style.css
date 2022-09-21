@@ -101,15 +101,17 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 4rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 3rem;
-  height: 100%;
 }
 
 .header-text .part {
