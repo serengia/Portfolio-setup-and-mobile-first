@@ -23,6 +23,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
+  color: #333;
   line-height: 1.6;
   font-weight: 400;
   width: 100%;
@@ -56,9 +57,21 @@ body {
 }
 
 .logo {
-  font-size: 1.6rem;
   margin-right: auto;
   flex: 1;
+}
+
+.logo a:link,
+.logo a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.logo a:hover,
+.logo a:active {
   color: #172b4d;
   font-weight: 600;
 }
@@ -114,22 +127,22 @@ body {
   gap: 3rem;
 }
 
-.header-text .part {
-  display: block;
+.header-text {
   text-align: center;
   line-height: 1.2;
 }
 
-.header-text .part-1 {
+.heading-primary {
   color: var(--color-primary);
   font-size: 2.8rem;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 1.6rem;
 }
 
-.header-text .part-2 {
+.heading-secondary {
   color: var(--color-secondary);
   font-size: 2.2rem;
+  font-weight: 600;
 }
 
 .header-description {
@@ -137,6 +150,7 @@ body {
 }
 
 .social-icons {
+  list-style: none;
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -146,12 +160,40 @@ body {
 
 .social-icon {
   fill: #7c889e;
-  transform: all 0.3s;
-  cursor: pointer;
 }
 
-.social-icon:hover {
+.social-icon:link,
+.social-icon:visited {
+  fill: #7c889e;
+  transform: all 0.3s;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.social-icon:hover,
+.social-icon:active {
   fill: var(--color-primary);
+}
+
+.scroll-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: var(--color-primary);
+}
+
+.scroll-btn {
+  border: var(--color-primary) 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  border-radius: 50%;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -167,15 +209,19 @@ body {
     display: none;
   }
 
-  .header-text .part-1 {
+  .heading-primary {
     font-size: 4rem;
   }
 
-  .header-text .part-2 {
+  .heading-secondary {
     font-size: 3rem;
   }
 
   .header-description {
+    display: none;
+  }
+
+  .scroll-btn-container {
     display: none;
   }
 }
