@@ -124,8 +124,7 @@ body {
 }
 
 .section-hero {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to bottom left,
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
@@ -302,7 +301,7 @@ body {
 }
 
 .details-container .skills {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem;
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -310,7 +309,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem; */
 }
 
 .skill-tag {
