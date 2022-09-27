@@ -124,7 +124,8 @@ body {
 }
 
 .section-hero {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to bottom left,
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
@@ -359,14 +360,14 @@ body {
 }
 
 footer {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom left,
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
     ),
     url("./img/illustration-contact-form.svg") no-repeat bottom right;
   background-size: 15%;
-
   padding: 8rem 0;
 }
 
@@ -458,7 +459,6 @@ form button {
 .form-container {
   display: flex;
   flex-direction: column;
-
   padding-bottom: 4rem;
 }
 
@@ -529,6 +529,7 @@ form button {
     align-self: flex-start;
     text-align: left;
   }
+
   .form-container form {
     flex: 0 0 50%;
   }
