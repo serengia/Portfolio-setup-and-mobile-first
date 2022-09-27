@@ -124,8 +124,7 @@ body {
 }
 
 .section-hero {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to bottom left,
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
@@ -401,6 +400,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .row {
-    max-width: 90%;
+    max-width: 88%;
   }
 }
