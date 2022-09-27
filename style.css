@@ -124,13 +124,7 @@ body {
 }
 
 .section-hero {
-  background-image:
-    linear-gradient(
-      to bottom left,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
-    ),
-    url("./img/hero.png");
+  background-image: url("./img/hero.png");
   min-height: calc(100vh - 80px);
   background-size: cover;
   background-repeat: no-repeat;
@@ -360,13 +354,7 @@ body {
 }
 
 footer {
-  background:
-    linear-gradient(
-      to bottom left,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
-    ),
-    url("./img/illustration-contact-form.svg") no-repeat bottom right;
+  background: url("./img/illustration-contact-form.svg") no-repeat bottom right;
   background-size: 15%;
   padding: 8rem 0;
 }
