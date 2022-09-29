@@ -1,518 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./img//icon-james.png" type="image/png" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio - James Serengia</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header-content row">
-        <div class="logo"><a href="/">Welcome</a></div>
-        <nav class="nav">
-          <svg
-            class="menu-icon"
-            width="18"
-            height="12"
-            viewBox="0 0 18 12"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0 1a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1zm1 4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2H1z"
-            />
-          </svg>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a class="menu-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#about">About</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <section class="section-hero">
-        <div class="row hero-content">
-          <div class="header-text">
-            <h1 class="heading-primary">
-              Hey there, my name is James Serengia.
-            </h1>
-            <h2 class="heading-secondary heading-secondary--green">
-              A software Engineer based in Nairobi Kenya
-            </h2>
-          </div>
-          <p class="description-text">
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
-          </p>
-          <ul class="social-icons">
-            <li>
-              <a href="#">
-                <svg
-                  class="social-icon"
-                  width="19"
-                  height="20"
-                  viewBox="0 0 19 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.4019 7.46114C18.4019 6.32124 18.0359 5.25043 17.3372 4.31779C17.6033 3.41969 17.6699 2.27979 17.6033 0.967185C17.5701 0.414508 17.1375 0 16.6052 0C16.3057 0 13.7771 0.0345423 12.3131 1.38169C11.0488 1.1399 9.71794 1.1399 8.42034 1.38169C6.98966 0.0345423 4.46101 0 4.12829 0C3.59594 0 3.16341 0.414508 3.13014 0.967185C3.03032 2.27979 3.13014 3.41969 3.39631 4.31779C2.6976 5.28497 2.33162 6.35579 2.33162 7.46114C2.33162 9.8791 4.12829 12.0553 6.85657 13.0915C6.75675 13.2988 6.69021 13.5406 6.62367 13.7824C3.72903 13.4715 2.36489 10.7427 2.29834 10.639C2.06544 10.1209 1.46655 9.91364 0.967475 10.19C0.468399 10.4318 0.268769 11.0535 0.534942 11.5717C0.601486 11.7444 2.43143 15.4404 6.45731 15.8549V18.9637C6.45731 19.5509 6.88984 20 7.45546 20H13.278C13.8436 20 14.2762 19.5509 14.2762 18.9637V14.8532C14.2762 14.2314 14.1431 13.6442 13.9102 13.1261C16.6052 12.0553 18.4019 9.91364 18.4019 7.46114Z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="social-icon">
-                <svg
-                  class="no"
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M20.1753 0.394423C19.842 -0.00424692 19.2753 -0.103914 18.842 0.195088L16.9086 1.52399C16.0086 0.560536 14.742 0.0289756 13.3753 0.0289756C10.6753 0.0289756 8.44198 2.22166 8.44198 4.94591C8.44198 5.34458 8.47532 5.71002 8.57532 6.07547C6.24198 5.57713 4.84198 3.88279 4.30865 0.826316C4.24198 0.427646 3.94198 0.128643 3.54198 0.0289756C3.17532 -0.070692 2.77532 0.0954206 2.54198 0.394423C2.47532 0.460868 -3.02469 8.10205 4.94198 14.5804C4.17532 16.2083 1.87532 17.6037 0.975315 18.0688C0.541982 18.2681 0.341982 18.7332 0.441982 19.1984C0.541982 19.6635 0.941982 19.9625 1.40865 19.9625H3.14198C13.2753 19.9625 17.8753 14.9459 17.9753 3.71667L20.0753 1.72332C20.4753 1.3911 20.5087 0.793093 20.1753 0.394423Z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  class="social-icon"
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.061 3.03455C10.5723 3.03455 7.70524 5.86213 7.70524 9.37937V19.3104C7.70524 19.6897 8.01612 20.0001 8.39608 20.0001H11.9885C12.3685 20.0001 12.6793 19.6897 12.6793 19.3104V9.65524C12.6793 8.89661 13.3011 8.27592 14.061 8.27592C14.821 8.27592 15.4427 8.89661 15.4427 9.65524V19.3104C15.4427 19.6897 15.7536 20.0001 16.1336 20.0001H19.726C20.1059 20.0001 20.4168 19.6897 20.4168 19.3104V9.37937C20.4168 5.89662 17.5843 3.03455 14.061 3.03455Z"
-                  />
-                  <path
-                    d="M2.90371 0C1.52202 0 0.416664 1.10345 0.416664 2.48276C0.416664 3.86207 1.52202 4.96552 2.90371 4.96552C4.2854 4.96552 5.39076 3.86207 5.39076 2.48276C5.39076 1.10345 4.2854 0 2.90371 0Z"
-                  />
-                  <path
-                    d="M4.69991 6.27588H1.10751C0.727545 6.27588 0.416664 6.58622 0.416664 6.96553V19.3104C0.416664 19.6897 0.727545 20 1.10751 20H4.69991C5.07988 20 5.39076 19.6897 5.39076 19.3104V6.96553C5.39076 6.58622 5.07988 6.27588 4.69991 6.27588Z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  class="social-icon"
-                  width="21"
-                  height="16"
-                  viewBox="0 0 21 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.8208 1.88042L20.4167 0.337684V0H14.8883L10.9483 9.90989L6.46582 0H0.669156V0.337684L2.53332 2.60547C2.71499 2.77305 2.80999 3.01811 2.78582 3.26484V12.1768C2.84332 12.4977 2.73999 12.8278 2.51666 13.0611L0.416656 15.6328V15.9663H6.37082V15.6286L4.27082 13.0611C4.04332 12.8269 3.93582 12.5027 3.98166 12.1768V4.46821L9.20832 15.9705H9.81582L14.31 4.46821V13.6312C14.31 13.8728 14.31 13.9225 14.1533 14.0808L12.5367 15.6615V16H20.38V15.6623L18.8217 14.1204C18.685 14.016 18.6142 13.8408 18.6433 13.6707V2.33011C18.6142 2.15916 18.6842 1.984 18.8208 1.88042Z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  class="social-icon"
-                  width="15"
-                  height="20"
-                  viewBox="0 0 15 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.96416 20C11.6608 20 14.5833 16.5392 14.5833 12.0742C14.5833 10.3908 14.3092 8.87083 12.3983 8.41417C12.8633 7.14083 14.205 3.4575 14.205 2.2775C14.205 1.23833 13.58 0.3675 12.4658 0.3675C10.69 0.3675 9.09833 5.51167 8.59999 6.73833C8.21416 5.625 6.40749 0 4.81499 0C3.57749 0 2.99666 0.894167 2.99666 2.01917C2.99666 3.39833 4.35749 6.9725 4.85083 8.3475C4.60083 8.2575 4.32999 8.17917 4.05416 8.17917C3.12249 8.17917 2.13166 9.31583 2.13166 10.2342C2.13166 10.5817 2.32666 11.07 2.44999 11.3942C0.981661 11.785 0.416661 12.7458 0.416661 14.195C0.412495 17.015 3.13583 20 6.96416 20V20ZM10.9892 4.21917C11.1492 3.73833 11.8292 1.7075 12.4658 1.7075C12.8083 1.7075 12.9 2.055 12.9 2.3325C12.9 3.07833 11.3642 7.2 11.025 8.11333L9.67166 7.87917L10.9892 4.21917ZM4.24666 1.8875V1.88667C4.24666 1.42167 4.82416 0.101667 6.08916 3.72667L7.46666 7.645C6.84583 7.59417 6.36416 7.5275 6.05833 7.7C5.62416 6.575 4.24666 3.02417 4.24666 1.8875V1.8875ZM4.15499 9.53083L4.15583 9.53167C5.32166 9.53167 6.82666 13.2267 6.82666 13.7267C6.82666 13.9258 6.63166 14.1717 6.40499 14.1717C5.57249 14.1717 3.34333 11.1675 3.34333 10.355C3.34666 10.0542 3.84833 9.53083 4.15499 9.53083V9.53083ZM2.81499 12.5892C3.26833 12.5892 4.97583 14.945 4.97583 15.445C4.97583 15.6367 4.66916 15.7692 4.51083 15.7692C3.86999 15.7692 3.61916 15.1633 2.47749 13.7617C1.29499 14.9217 3.29333 17.1558 4.79833 17.1558C5.83666 17.1558 6.51333 16.2108 6.31083 15.515C6.45833 15.515 6.64083 15.5267 6.77666 15.4917C6.82083 16.55 7.13916 17.8117 8.43666 17.9017C8.43666 17.8667 8.51666 17.6242 8.51666 17.6125C8.51666 16.9325 8.09499 16.3392 8.09499 15.6475C8.09499 14.5417 8.95833 13.4717 9.83416 12.8467C10.1525 12.6125 10.5392 12.4675 10.9125 12.335C11.2992 12.1908 11.7092 12.0225 12.0025 11.7333C11.9583 11.2958 11.7758 10.9092 11.33 10.9092C10.2275 10.9092 6.53 11.0658 6.53 9.35833C6.53 9.09667 6.53416 8.84667 7.22333 8.84667C8.50916 8.84667 11.7733 9.15917 12.7283 9.98333C13.4483 10.6125 13.6958 14.405 11.4942 16.8075L11.4917 16.8083C10.3333 18.0583 8.8525 18.7067 7.125 18.7067C4.76083 18.7067 2.89333 17.4333 1.99416 15.2575C1.31333 13.5625 2.14583 12.5892 2.81499 12.5892V12.5892ZM7.56583 11.8858C7.95333 12.0075 8.35083 12.0433 8.74916 12.1208C8.45416 12.3317 8.1925 12.59 7.94083 12.8667C7.82916 12.535 7.69333 12.2108 7.56583 11.8858Z"
-                  /></svg
-              ></a>
-            </li>
-          </ul>
-          <div class="scroll-btn-container">
-            <a href="#" class="scroll-btn"
-              ><svg
-                class="scroll-icon"
-                viewBox="0 0 14 8"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                /></svg
-            ></a>
-          </div>
-        </div>
-      </section>
-      <section class="section-works">
-        <div class="works-header row">
-          <h2 class="section-title">My resent works</h2>
-          <hr class="text-divider" />
-        </div>
-        <div class="works-container row">
-          <div class="work">
-            <div class="image-container">
-              <img src="./img/real-estate.jpg" alt="Real estate project" />
-            </div>
-            <div class="details-container">
-              <h3>Real Estate Project</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--grey">Ruby</li>
-                <li class="skill-tag skill-tag--grey">HTML</li>
-                <li class="skill-tag skill-tag--grey">CSS</li>
-                <li class="skill-tag skill-tag--grey">Javascript</li>
-              </ul>
-              <button class="button button-primary">See projects</button>
-            </div>
-          </div>
-          <div class="work">
-            <div class="image-container">
-              <img
-                src="./img/human-resource-system.jpg"
-                alt="Human Resource System"
-              />
-            </div>
-            <div class="details-container">
-              <h3>Human Resource System</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--grey">Ruby</li>
-                <li class="skill-tag skill-tag--grey">HTML</li>
-                <li class="skill-tag skill-tag--grey">CSS</li>
-                <li class="skill-tag skill-tag--grey">Javascript</li>
-              </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./img//icon-james.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio - James Serengia</title>
+</head>
 
-              <button class="button button-primary">See projects</button>
-            </div>
-          </div>
-          <div class="work">
-            <div class="image-container">
-              <img src="./img/design-firm.jpg" alt="Design Firm Project" />
-            </div>
-            <div class="details-container">
-              <h3>Design Firm Project</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--grey">Ruby</li>
-                <li class="skill-tag skill-tag--grey">HTML</li>
-                <li class="skill-tag skill-tag--grey">CSS</li>
-                <li class="skill-tag skill-tag--grey">Javascript</li>
-              </ul>
-              <button class="button button-primary">See projects</button>
-            </div>
-          </div>
-          <div class="work">
-            <div class="image-container">
-              <img src="./img/logistics.jpg" alt="Logistics Web Application" />
-            </div>
-            <div class="details-container">
-              <h3>Logistics Web Application</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--grey">Ruby</li>
-                <li class="skill-tag skill-tag--grey">HTML</li>
-                <li class="skill-tag skill-tag--grey">CSS</li>
-                <li class="skill-tag skill-tag--grey">Javascript</li>
-              </ul>
-              <button class="button button-primary">See projects</button>
-            </div>
-          </div>
-          <div class="work">
-            <div class="image-container">
-              <img
-                src="./img/legacy-code-update.jpg"
-                alt="Saas Legacy Code Update"
-              />
-            </div>
-            <div class="details-container">
-              <h3>Saas Legacy Code Update</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--grey">Ruby</li>
-                <li class="skill-tag skill-tag--grey">HTML</li>
-                <li class="skill-tag skill-tag--grey">CSS</li>
-                <li class="skill-tag skill-tag--grey">Javascript</li>
-              </ul>
-              <button class="button button-primary">See projects</button>
-            </div>
-          </div>
-          <div class="work">
-            <div class="image-container">
-              <img
-                src="./img/web-development.jpg"
-                alt="School Software System"
-              />
-            </div>
-            <div class="details-container">
-              <h3>School Software System</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--grey">Ruby</li>
-                <li class="skill-tag skill-tag--grey">HTML</li>
-                <li class="skill-tag skill-tag--grey">CSS</li>
-                <li class="skill-tag skill-tag--grey">Javascript</li>
-              </ul>
-              <button class="button button-primary">See projects</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-about">
-        <div class="about-header row">
-          <h2 class="section-title m-b-l">About Me</h2>
-          <p class="description-text m-b-l">
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don't hestiate to contact me.
-          </p>
-          <button class="button button-primary m-t-m m-b-l">
-            Get My Resume
-          </button>
-        </div>
-        <div class="about-container row">
-          <div class="skill">
-            <div class="skill-icon-container">
-              <a href="#" class="skill-icon-wrapper">
-                <svg
-                  class="skill-icon"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M34.2704 20.896H43.7042C43.8516 20.896 43.999 20.7489 43.999 20.6017C43.3357 10.7422 36.1866 2.57496 26.7528 0.514759C26.5317 0.441181 26.3106 0.735495 26.5317 0.956231C30.9538 5.886 33.7545 12.9495 34.0493 20.6753C33.9756 20.8225 34.123 20.896 34.2704 20.896Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M22.1839 0C22.1102 0 22.0365 0 21.9628 0C21.8891 0 21.8154 0 21.7417 0C16.0667 4.34114 12.529 12.0669 12.1605 20.602C12.1605 20.7492 12.3079 20.8963 12.4553 20.8963H31.4704C31.6178 20.8963 31.7652 20.7492 31.7652 20.602C31.4704 12.0669 27.859 4.34114 22.1839 0Z"
-                    fill="#36B37E"
-                  />
-                  <path
-                    d="M12.4553 23.1036C12.3079 23.1036 12.1605 23.2507 12.1605 23.3979C12.529 32.0066 16.0667 39.6588 21.7417 43.9999C21.8154 43.9999 21.8891 43.9999 21.9628 43.9999C22.0365 43.9999 22.1102 43.9999 22.1839 43.9999C27.859 39.6588 31.3967 31.933 31.7652 23.3979C31.7652 23.2507 31.6178 23.1036 31.4704 23.1036H12.4553Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M33.9756 23.3243C33.6808 31.0501 30.9538 38.1136 26.5317 43.0434C26.3843 43.2641 26.5317 43.5584 26.7528 43.4849C36.1867 41.4247 43.4094 33.2574 43.999 23.3979C43.999 23.2507 43.8516 23.1036 43.7042 23.1036H34.2704C34.123 23.1036 33.9756 23.2507 33.9756 23.3243Z"
-                    fill="#36B37E"
-                  />
-                  <path
-                    d="M9.72815 23.1036H0.294319C0.146915 23.1036 -0.000488281 23.2507 -0.000488281 23.3979C0.589126 33.2574 7.81191 41.4247 17.2457 43.4849C17.4668 43.5584 17.688 43.2641 17.4668 43.0434C12.971 38.1136 10.2441 31.0501 9.94926 23.3243C10.023 23.2507 9.87556 23.1036 9.72815 23.1036Z"
-                    fill="#36B37E"
-                  />
-                  <path
-                    d="M10.023 20.6753C10.3178 12.9495 13.0447 5.886 17.4668 0.956231C17.6143 0.735495 17.4668 0.441181 17.2457 0.514759C7.81191 2.57496 0.589126 10.7422 -0.000488281 20.6017C-0.000488281 20.7489 0.146915 20.896 0.294319 20.896H9.72815C9.87556 20.896 10.023 20.8225 10.023 20.6753Z"
-                    fill="#091E42"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div class="details-container">
-              <h3>Languages</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--white">Ruby</li>
-                <li class="skill-tag skill-tag--white">HTML</li>
-                <li class="skill-tag skill-tag--white">CSS</li>
-                <li class="skill-tag skill-tag--white">Javascript</li>
-              </ul>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-icon-container">
-              <a href="#" class="skill-icon-wrapper">
-                <svg
-                  class="skill-icon"
-                  width="39"
-                  height="39"
-                  viewBox="0 0 39 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 22.7999C12 23.1999 12.2 23.5999 12.6 23.7999L17.6 26.7999C18.2 27.1999 18.8 26.7999 18.8 26.1999V20.5999C18.8 20.3999 18.6 19.9999 18.4 19.9999L13.2 16.5999C12.8 16.3999 12 16.7999 12 17.3999V22.7999Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M19.5999 20.3997V25.9997C19.5999 26.5997 20.1999 26.9997 20.7999 26.5997L25.7999 23.5997C26.1999 23.3997 26.3999 22.9997 26.3999 22.5997V17.3997C26.3999 16.7997 25.7999 16.3997 25.1999 16.7997L19.9999 19.5997C19.7999 19.7997 19.5999 19.9997 19.5999 20.3997Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M25.2 15.7998L19.6 18.9998C19.4 19.1998 19 19.1998 18.8 18.9998L13.2 15.7998C12.6 15.3998 12.6 14.7998 13.2 14.3998L18.8 11.1998C19 10.9998 19.4 10.9998 19.6 11.1998L25.2 14.3998C25.8 14.5998 25.8 15.3998 25.2 15.7998Z"
-                    fill="#36B37E"
-                  />
-                  <path
-                    d="M0 34.0001C0 34.4001 0.2 34.8001 0.6 35.0001L5.6 38.0001C6.2 38.4001 6.8 38.0001 6.8 37.4001V31.8001C6.8 31.6001 6.6 31.2001 6.4 31.2001L1.2 28.2001C0.6 27.8001 0 28.2001 0 28.8001V34.0001H0Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M7.59985 31.4003V37.0003C7.59985 37.6003 8.19985 38.0003 8.79985 37.6003L13.7999 34.6003C14.1999 34.4003 14.3999 34.0003 14.3999 33.6003V28.0003C14.3999 27.4003 13.7999 27.0003 13.1999 27.4003L7.99985 30.8003C7.79985 31.0003 7.59985 31.2003 7.59985 31.4003Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M13.2 26.7998L7.6 29.9998C7.4 30.1998 7 30.1998 6.8 29.9998L1.2 26.7998C0.6 26.3998 0.6 25.7998 1.2 25.3998L6.8 22.1998C7 21.9998 7.4 21.9998 7.6 22.1998L13.2 25.3998C13.6 25.7998 13.6 26.5998 13.2 26.7998Z"
-                    fill="#36B37E"
-                  />
-                  <path
-                    d="M24.2002 34.0001C24.2002 34.4001 24.4002 34.8001 24.8002 35.0001L29.8002 38.0001C30.4002 38.4001 31.0002 38.0001 31.0002 37.4001V31.8001C31.0002 31.6001 30.8002 31.2001 30.6002 31.2001L25.4002 28.2001C24.8002 27.8001 24.2002 28.2001 24.2002 28.8001V34.0001Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M31.5999 31.4003V37.0003C31.5999 37.6003 32.1999 38.0003 32.7999 37.6003L37.7999 34.6003C38.1999 34.4003 38.3999 34.0003 38.3999 33.6003V28.0003C38.3999 27.4003 37.7999 27.0003 37.1999 27.4003L31.9999 30.8003C31.7999 31.0003 31.5999 31.2003 31.5999 31.4003Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M37.2 26.7998L31.6 29.9998C31.4 30.1998 31 30.1998 30.8 29.9998L25.2 26.7998C24.6 26.3998 24.6 25.7998 25.2 25.3998L30.8 22.1998C31 21.9998 31.4 21.9998 31.6 22.1998L37.2 25.3998C37.8 25.7998 37.8 26.5998 37.2 26.7998Z"
-                    fill="#36B37E"
-                  />
-                  <path
-                    d="M0 11.8005C0 12.2005 0.2 12.6005 0.6 12.8005L5.6 15.8005C6 16.0005 6.8 15.6005 6.8 15.0005V9.20046C6.8 9.00046 6.6 8.60046 6.4 8.60046L1.2 5.60046C0.6 5.40046 0 5.60046 0 6.40046V11.8005Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M7.59985 9.19968V14.7997C7.59985 15.3997 8.19985 15.7997 8.79985 15.3997L13.7999 12.3997C14.1999 12.1997 14.3999 11.7997 14.3999 11.3997V6.39968C14.3999 5.79968 13.7999 5.39968 13.1999 5.79968L7.99985 8.59968C7.79985 8.79968 7.59985 8.99968 7.59985 9.19968Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M13.2 4.6L7.6 7.8C7.4 8 7 8 6.8 7.8L1.2 4.6C0.6 4.2 0.6 3.6 1.2 3.2L6.8 0C7 0 7.4 0 7.6 0.2L13.2 3.4C13.6 3.6 13.6 4.4 13.2 4.6Z"
-                    fill="#36B37E"
-                  />
-                  <path
-                    d="M24.2002 11.8005C24.2002 12.2005 24.4002 12.6005 24.8002 12.8005L29.8002 15.8005C30.4002 16.2005 31.0002 15.8005 31.0002 15.2005V9.20047C31.0002 9.00047 30.8002 8.60047 30.6002 8.60047L25.4002 5.60047C24.8002 5.20047 24.2002 5.60047 24.2002 6.20047V11.8005Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M31.5999 9.19968V14.7997C31.5999 15.3997 32.1999 15.7997 32.7999 15.3997L37.7999 12.3997C38.1999 12.1997 38.3999 11.7997 38.3999 11.3997V6.39968C38.3999 5.79968 37.7999 5.39968 37.1999 5.79968L31.9999 8.59968C31.7999 8.79968 31.5999 8.99968 31.5999 9.19968Z"
-                    fill="#091E42"
-                  />
-                  <path
-                    d="M37.2 4.5998L31.6 7.9998C31.4 7.9998 31.2 7.9998 30.8 7.9998L25.2 4.7998C24.6 4.3998 24.6 3.7998 25.2 3.3998L30.8 0.199805C31 -0.00019531 31.4 -0.00019531 31.6 0.199805L37.2 3.3998C37.8 3.5998 37.8 4.3998 37.2 4.5998Z"
-                    fill="#36B37E"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div class="details-container">
-              <h3>Frameworks</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--white">React</li>
-                <li class="skill-tag skill-tag--white">Bootstrap</li>
-                <li class="skill-tag skill-tag--white">Ruby on Rails</li>
-                <li class="skill-tag skill-tag--white">Selenium</li>
-              </ul>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-icon-container">
-              <a href="#" class="skill-icon-wrapper">
-                <svg
-                  class="skill-icon"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_34_2481)">
-                    <path
-                      d="M20.1996 4H29.1996C30.3996 4 31.1996 5.2 30.9996 6.4L26.5996 20.8H31.1996C32.5996 20.8 33.5996 22.2 32.9996 23.6L23.9996 42C23.5996 42.6 22.5996 42.4 22.7996 41.6L24.9996 27.6H17.9996C16.7996 27.6 15.9996 26.6 16.1996 25.4L18.3996 5.8C18.3996 4.8 19.1996 4 20.1996 4Z"
-                      fill="#36B37E"
-                    />
-                    <path
-                      d="M2.43662 16.6706L5.64445 14.8185C6.07216 14.5716 6.60763 14.8406 6.78668 15.3153L8.22241 21.4238L9.86196 20.4772C10.361 20.1891 11.0094 20.4892 11.0876 21.1185L11.7183 29.6189C11.7009 29.9181 11.3027 30.0516 11.2071 29.7214L9.07068 24.2101L6.57571 25.6506C6.14799 25.8975 5.65424 25.7008 5.4752 25.2261L2.17055 17.6914C1.96194 17.33 2.08019 16.8764 2.43662 16.6706Z"
-                      fill="#091E42"
-                    />
-                    <path
-                      d="M46.6256 16.6706L43.4178 14.8185C42.9901 14.5716 42.4546 14.8406 42.2756 15.3153L40.8398 21.4238L39.2003 20.4772C38.7013 20.1891 38.0528 20.4892 37.9746 21.1185L37.344 29.6189C37.3614 29.9181 37.7595 30.0516 37.8552 29.7214L39.9916 24.2101L42.4866 25.6506C42.9143 25.8975 43.408 25.7008 43.5871 25.2261L46.8917 17.6914C47.1003 17.33 46.9821 16.8764 46.6256 16.6706Z"
-                      fill="#091E42"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_34_2481">
-                      <rect width="48" height="48" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </div>
-            <div class="details-container">
-              <h3>Skills</h3>
-              <ul class="skills">
-                <li class="skill-tag skill-tag--white">Code kit</li>
-                <li class="skill-tag skill-tag--white">Github</li>
-                <li class="skill-tag skill-tag--white">Code-pen</li>
-                <li class="skill-tag skill-tag--white">Gitlab</li>
-                <li class="skill-tag skill-tag--white">Terminal</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container row">
-        <div class="form-container">
-          <h2 class="heading-secondary heading-secondary--blue">
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
+<body>
+  <header class="header">
+    <div class="header-content row">
+      <div class="logo"><a href="/">Welcome</a></div>
+      <nav class="nav">
+        <svg class="menu-icon" width="18" height="12" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 1a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1zm1 4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2H1z" />
+        </svg>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#about">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-hero">
+      <div class="row hero-content">
+        <div class="header-text">
+          <h1 class="heading-primary">
+            Hey there, my name is James Serengia.
+          </h1>
+          <h2 class="heading-secondary heading-secondary--green">
+            A software Engineer based in Nairobi Kenya
           </h2>
-          <form action="https://formspree.io/f/myyvwvbw" method="POST">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Full name"
-              maxlength="30"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email address"
-              required
-            />
-            <textarea
-              name="message"
-              id="user-message"
-              cols="30"
-              rows="10"
-              maxlength="500"
-              placeholder="Enter Text Here"
-              required
-            ></textarea>
-            <button type="submit">Get in Touch</button>
-          </form>
         </div>
-        <div class="social-links">
-          <a href="#">
-            <object data="./img/twitter.svg" type="image/svg+xml"></object>
-          </a>
-          <a href="#">
-            <object data="./img/linkedin.svg" type="image/svg+xml"></object>
-          </a>
-          <a href="#">
-            <object data="./img/medium.svg" type="image/svg+xml"></object>
-          </a>
-          <a href="#">
-            <object data="./img/github.svg" type="image/svg+xml"></object>
-          </a>
-          <a href="#">
-            <object data="./img/angellist.svg" type="image/svg+xml"></object>
-          </a>
+        <p class="description-text">
+          I can help you build a product , feature or website Look through
+          some of my work and experience! If you like what you see and have a
+          project you need coded, don’t hestiate to contact me.
+        </p>
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <svg class="social-icon" width="19" height="20" viewBox="0 0 19 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.4019 7.46114C18.4019 6.32124 18.0359 5.25043 17.3372 4.31779C17.6033 3.41969 17.6699 2.27979 17.6033 0.967185C17.5701 0.414508 17.1375 0 16.6052 0C16.3057 0 13.7771 0.0345423 12.3131 1.38169C11.0488 1.1399 9.71794 1.1399 8.42034 1.38169C6.98966 0.0345423 4.46101 0 4.12829 0C3.59594 0 3.16341 0.414508 3.13014 0.967185C3.03032 2.27979 3.13014 3.41969 3.39631 4.31779C2.6976 5.28497 2.33162 6.35579 2.33162 7.46114C2.33162 9.8791 4.12829 12.0553 6.85657 13.0915C6.75675 13.2988 6.69021 13.5406 6.62367 13.7824C3.72903 13.4715 2.36489 10.7427 2.29834 10.639C2.06544 10.1209 1.46655 9.91364 0.967475 10.19C0.468399 10.4318 0.268769 11.0535 0.534942 11.5717C0.601486 11.7444 2.43143 15.4404 6.45731 15.8549V18.9637C6.45731 19.5509 6.88984 20 7.45546 20H13.278C13.8436 20 14.2762 19.5509 14.2762 18.9637V14.8532C14.2762 14.2314 14.1431 13.6442 13.9102 13.1261C16.6052 12.0553 18.4019 9.91364 18.4019 7.46114Z" />
+              </svg></a>
+          </li>
+          <li>
+            <a href="#" class="social-icon">
+              <svg class="no" width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.1753 0.394423C19.842 -0.00424692 19.2753 -0.103914 18.842 0.195088L16.9086 1.52399C16.0086 0.560536 14.742 0.0289756 13.3753 0.0289756C10.6753 0.0289756 8.44198 2.22166 8.44198 4.94591C8.44198 5.34458 8.47532 5.71002 8.57532 6.07547C6.24198 5.57713 4.84198 3.88279 4.30865 0.826316C4.24198 0.427646 3.94198 0.128643 3.54198 0.0289756C3.17532 -0.070692 2.77532 0.0954206 2.54198 0.394423C2.47532 0.460868 -3.02469 8.10205 4.94198 14.5804C4.17532 16.2083 1.87532 17.6037 0.975315 18.0688C0.541982 18.2681 0.341982 18.7332 0.441982 19.1984C0.541982 19.6635 0.941982 19.9625 1.40865 19.9625H3.14198C13.2753 19.9625 17.8753 14.9459 17.9753 3.71667L20.0753 1.72332C20.4753 1.3911 20.5087 0.793093 20.1753 0.394423Z" />
+              </svg></a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="social-icon" width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.061 3.03455C10.5723 3.03455 7.70524 5.86213 7.70524 9.37937V19.3104C7.70524 19.6897 8.01612 20.0001 8.39608 20.0001H11.9885C12.3685 20.0001 12.6793 19.6897 12.6793 19.3104V9.65524C12.6793 8.89661 13.3011 8.27592 14.061 8.27592C14.821 8.27592 15.4427 8.89661 15.4427 9.65524V19.3104C15.4427 19.6897 15.7536 20.0001 16.1336 20.0001H19.726C20.1059 20.0001 20.4168 19.6897 20.4168 19.3104V9.37937C20.4168 5.89662 17.5843 3.03455 14.061 3.03455Z" />
+                <path
+                  d="M2.90371 0C1.52202 0 0.416664 1.10345 0.416664 2.48276C0.416664 3.86207 1.52202 4.96552 2.90371 4.96552C4.2854 4.96552 5.39076 3.86207 5.39076 2.48276C5.39076 1.10345 4.2854 0 2.90371 0Z" />
+                <path
+                  d="M4.69991 6.27588H1.10751C0.727545 6.27588 0.416664 6.58622 0.416664 6.96553V19.3104C0.416664 19.6897 0.727545 20 1.10751 20H4.69991C5.07988 20 5.39076 19.6897 5.39076 19.3104V6.96553C5.39076 6.58622 5.07988 6.27588 4.69991 6.27588Z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="social-icon" width="21" height="16" viewBox="0 0 21 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.8208 1.88042L20.4167 0.337684V0H14.8883L10.9483 9.90989L6.46582 0H0.669156V0.337684L2.53332 2.60547C2.71499 2.77305 2.80999 3.01811 2.78582 3.26484V12.1768C2.84332 12.4977 2.73999 12.8278 2.51666 13.0611L0.416656 15.6328V15.9663H6.37082V15.6286L4.27082 13.0611C4.04332 12.8269 3.93582 12.5027 3.98166 12.1768V4.46821L9.20832 15.9705H9.81582L14.31 4.46821V13.6312C14.31 13.8728 14.31 13.9225 14.1533 14.0808L12.5367 15.6615V16H20.38V15.6623L18.8217 14.1204C18.685 14.016 18.6142 13.8408 18.6433 13.6707V2.33011C18.6142 2.15916 18.6842 1.984 18.8208 1.88042Z" />
+              </svg></a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="social-icon" width="15" height="20" viewBox="0 0 15 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.96416 20C11.6608 20 14.5833 16.5392 14.5833 12.0742C14.5833 10.3908 14.3092 8.87083 12.3983 8.41417C12.8633 7.14083 14.205 3.4575 14.205 2.2775C14.205 1.23833 13.58 0.3675 12.4658 0.3675C10.69 0.3675 9.09833 5.51167 8.59999 6.73833C8.21416 5.625 6.40749 0 4.81499 0C3.57749 0 2.99666 0.894167 2.99666 2.01917C2.99666 3.39833 4.35749 6.9725 4.85083 8.3475C4.60083 8.2575 4.32999 8.17917 4.05416 8.17917C3.12249 8.17917 2.13166 9.31583 2.13166 10.2342C2.13166 10.5817 2.32666 11.07 2.44999 11.3942C0.981661 11.785 0.416661 12.7458 0.416661 14.195C0.412495 17.015 3.13583 20 6.96416 20V20ZM10.9892 4.21917C11.1492 3.73833 11.8292 1.7075 12.4658 1.7075C12.8083 1.7075 12.9 2.055 12.9 2.3325C12.9 3.07833 11.3642 7.2 11.025 8.11333L9.67166 7.87917L10.9892 4.21917ZM4.24666 1.8875V1.88667C4.24666 1.42167 4.82416 0.101667 6.08916 3.72667L7.46666 7.645C6.84583 7.59417 6.36416 7.5275 6.05833 7.7C5.62416 6.575 4.24666 3.02417 4.24666 1.8875V1.8875ZM4.15499 9.53083L4.15583 9.53167C5.32166 9.53167 6.82666 13.2267 6.82666 13.7267C6.82666 13.9258 6.63166 14.1717 6.40499 14.1717C5.57249 14.1717 3.34333 11.1675 3.34333 10.355C3.34666 10.0542 3.84833 9.53083 4.15499 9.53083V9.53083ZM2.81499 12.5892C3.26833 12.5892 4.97583 14.945 4.97583 15.445C4.97583 15.6367 4.66916 15.7692 4.51083 15.7692C3.86999 15.7692 3.61916 15.1633 2.47749 13.7617C1.29499 14.9217 3.29333 17.1558 4.79833 17.1558C5.83666 17.1558 6.51333 16.2108 6.31083 15.515C6.45833 15.515 6.64083 15.5267 6.77666 15.4917C6.82083 16.55 7.13916 17.8117 8.43666 17.9017C8.43666 17.8667 8.51666 17.6242 8.51666 17.6125C8.51666 16.9325 8.09499 16.3392 8.09499 15.6475C8.09499 14.5417 8.95833 13.4717 9.83416 12.8467C10.1525 12.6125 10.5392 12.4675 10.9125 12.335C11.2992 12.1908 11.7092 12.0225 12.0025 11.7333C11.9583 11.2958 11.7758 10.9092 11.33 10.9092C10.2275 10.9092 6.53 11.0658 6.53 9.35833C6.53 9.09667 6.53416 8.84667 7.22333 8.84667C8.50916 8.84667 11.7733 9.15917 12.7283 9.98333C13.4483 10.6125 13.6958 14.405 11.4942 16.8075L11.4917 16.8083C10.3333 18.0583 8.8525 18.7067 7.125 18.7067C4.76083 18.7067 2.89333 17.4333 1.99416 15.2575C1.31333 13.5625 2.14583 12.5892 2.81499 12.5892V12.5892ZM7.56583 11.8858C7.95333 12.0075 8.35083 12.0433 8.74916 12.1208C8.45416 12.3317 8.1925 12.59 7.94083 12.8667C7.82916 12.535 7.69333 12.2108 7.56583 11.8858Z" />
+              </svg></a>
+          </li>
+        </ul>
+        <div class="scroll-btn-container">
+          <a href="#" class="scroll-btn"><svg class="scroll-icon" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" />
+            </svg></a>
         </div>
-        <a class="footer-email" href="mailto:myemailhere@email.com"
-          >myemailhere@email.com</a
-        >
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="section-works">
+      <div class="works-header row">
+        <h2 class="section-title">My resent works</h2>
+        <hr class="text-divider" />
+      </div>
+      <div class="works-container row">
+        <div class="work">
+          <div class="image-container">
+            <img src="./img/real-estate.jpg" alt="Real estate project" />
+          </div>
+          <div class="details-container">
+            <h3>Real Estate Project</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--grey">Ruby</li>
+              <li class="skill-tag skill-tag--grey">HTML</li>
+              <li class="skill-tag skill-tag--grey">CSS</li>
+              <li class="skill-tag skill-tag--grey">Javascript</li>
+            </ul>
+            <button class="button button-primary">See projects</button>
+          </div>
+        </div>
+        <div class="work">
+          <div class="image-container">
+            <img src="./img/human-resource-system.jpg" alt="Human Resource System" />
+          </div>
+          <div class="details-container">
+            <h3>Human Resource System</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--grey">Ruby</li>
+              <li class="skill-tag skill-tag--grey">HTML</li>
+              <li class="skill-tag skill-tag--grey">CSS</li>
+              <li class="skill-tag skill-tag--grey">Javascript</li>
+            </ul>
+
+            <button class="button button-primary">See projects</button>
+          </div>
+        </div>
+        <div class="work">
+          <div class="image-container">
+            <img src="./img/design-firm.jpg" alt="Design Firm Project" />
+          </div>
+          <div class="details-container">
+            <h3>Design Firm Project</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--grey">Ruby</li>
+              <li class="skill-tag skill-tag--grey">HTML</li>
+              <li class="skill-tag skill-tag--grey">CSS</li>
+              <li class="skill-tag skill-tag--grey">Javascript</li>
+            </ul>
+            <button class="button button-primary">See projects</button>
+          </div>
+        </div>
+        <div class="work">
+          <div class="image-container">
+            <img src="./img/logistics.jpg" alt="Logistics Web Application" />
+          </div>
+          <div class="details-container">
+            <h3>Logistics Web Application</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--grey">Ruby</li>
+              <li class="skill-tag skill-tag--grey">HTML</li>
+              <li class="skill-tag skill-tag--grey">CSS</li>
+              <li class="skill-tag skill-tag--grey">Javascript</li>
+            </ul>
+            <button class="button button-primary">See projects</button>
+          </div>
+        </div>
+        <div class="work">
+          <div class="image-container">
+            <img src="./img/legacy-code-update.jpg" alt="Saas Legacy Code Update" />
+          </div>
+          <div class="details-container">
+            <h3>Saas Legacy Code Update</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--grey">Ruby</li>
+              <li class="skill-tag skill-tag--grey">HTML</li>
+              <li class="skill-tag skill-tag--grey">CSS</li>
+              <li class="skill-tag skill-tag--grey">Javascript</li>
+            </ul>
+            <button class="button button-primary">See projects</button>
+          </div>
+        </div>
+        <div class="work">
+          <div class="image-container">
+            <img src="./img/web-development.jpg" alt="School Software System" />
+          </div>
+          <div class="details-container">
+            <h3>School Software System</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--grey">Ruby</li>
+              <li class="skill-tag skill-tag--grey">HTML</li>
+              <li class="skill-tag skill-tag--grey">CSS</li>
+              <li class="skill-tag skill-tag--grey">Javascript</li>
+            </ul>
+            <button class="button button-primary">See projects</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-about">
+      <div class="about-header row">
+        <h2 class="section-title m-b-l">About Me</h2>
+        <p class="description-text m-b-l">
+          I can help you build a product , feature or website Look through
+          some of my work and experience! If you like what you see and have a
+          project you need coded, don't hestiate to contact me.
+        </p>
+        <button class="button button-primary m-t-m m-b-l">
+          Get My Resume
+        </button>
+      </div>
+      <div class="about-container row">
+        <div class="skill">
+          <div class="skill-icon-container">
+            <a href="#" class="skill-icon-wrapper">
+              <svg class="skill-icon" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.2704 20.896H43.7042C43.8516 20.896 43.999 20.7489 43.999 20.6017C43.3357 10.7422 36.1866 2.57496 26.7528 0.514759C26.5317 0.441181 26.3106 0.735495 26.5317 0.956231C30.9538 5.886 33.7545 12.9495 34.0493 20.6753C33.9756 20.8225 34.123 20.896 34.2704 20.896Z"
+                  fill="#091E42" />
+                <path
+                  d="M22.1839 0C22.1102 0 22.0365 0 21.9628 0C21.8891 0 21.8154 0 21.7417 0C16.0667 4.34114 12.529 12.0669 12.1605 20.602C12.1605 20.7492 12.3079 20.8963 12.4553 20.8963H31.4704C31.6178 20.8963 31.7652 20.7492 31.7652 20.602C31.4704 12.0669 27.859 4.34114 22.1839 0Z"
+                  fill="#36B37E" />
+                <path
+                  d="M12.4553 23.1036C12.3079 23.1036 12.1605 23.2507 12.1605 23.3979C12.529 32.0066 16.0667 39.6588 21.7417 43.9999C21.8154 43.9999 21.8891 43.9999 21.9628 43.9999C22.0365 43.9999 22.1102 43.9999 22.1839 43.9999C27.859 39.6588 31.3967 31.933 31.7652 23.3979C31.7652 23.2507 31.6178 23.1036 31.4704 23.1036H12.4553Z"
+                  fill="#091E42" />
+                <path
+                  d="M33.9756 23.3243C33.6808 31.0501 30.9538 38.1136 26.5317 43.0434C26.3843 43.2641 26.5317 43.5584 26.7528 43.4849C36.1867 41.4247 43.4094 33.2574 43.999 23.3979C43.999 23.2507 43.8516 23.1036 43.7042 23.1036H34.2704C34.123 23.1036 33.9756 23.2507 33.9756 23.3243Z"
+                  fill="#36B37E" />
+                <path
+                  d="M9.72815 23.1036H0.294319C0.146915 23.1036 -0.000488281 23.2507 -0.000488281 23.3979C0.589126 33.2574 7.81191 41.4247 17.2457 43.4849C17.4668 43.5584 17.688 43.2641 17.4668 43.0434C12.971 38.1136 10.2441 31.0501 9.94926 23.3243C10.023 23.2507 9.87556 23.1036 9.72815 23.1036Z"
+                  fill="#36B37E" />
+                <path
+                  d="M10.023 20.6753C10.3178 12.9495 13.0447 5.886 17.4668 0.956231C17.6143 0.735495 17.4668 0.441181 17.2457 0.514759C7.81191 2.57496 0.589126 10.7422 -0.000488281 20.6017C-0.000488281 20.7489 0.146915 20.896 0.294319 20.896H9.72815C9.87556 20.896 10.023 20.8225 10.023 20.6753Z"
+                  fill="#091E42" />
+              </svg>
+            </a>
+          </div>
+          <div class="details-container">
+            <h3>Languages</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--white">Ruby</li>
+              <li class="skill-tag skill-tag--white">HTML</li>
+              <li class="skill-tag skill-tag--white">CSS</li>
+              <li class="skill-tag skill-tag--white">Javascript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon-container">
+            <a href="#" class="skill-icon-wrapper">
+              <svg class="skill-icon" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 22.7999C12 23.1999 12.2 23.5999 12.6 23.7999L17.6 26.7999C18.2 27.1999 18.8 26.7999 18.8 26.1999V20.5999C18.8 20.3999 18.6 19.9999 18.4 19.9999L13.2 16.5999C12.8 16.3999 12 16.7999 12 17.3999V22.7999Z"
+                  fill="#091E42" />
+                <path
+                  d="M19.5999 20.3997V25.9997C19.5999 26.5997 20.1999 26.9997 20.7999 26.5997L25.7999 23.5997C26.1999 23.3997 26.3999 22.9997 26.3999 22.5997V17.3997C26.3999 16.7997 25.7999 16.3997 25.1999 16.7997L19.9999 19.5997C19.7999 19.7997 19.5999 19.9997 19.5999 20.3997Z"
+                  fill="#091E42" />
+                <path
+                  d="M25.2 15.7998L19.6 18.9998C19.4 19.1998 19 19.1998 18.8 18.9998L13.2 15.7998C12.6 15.3998 12.6 14.7998 13.2 14.3998L18.8 11.1998C19 10.9998 19.4 10.9998 19.6 11.1998L25.2 14.3998C25.8 14.5998 25.8 15.3998 25.2 15.7998Z"
+                  fill="#36B37E" />
+                <path
+                  d="M0 34.0001C0 34.4001 0.2 34.8001 0.6 35.0001L5.6 38.0001C6.2 38.4001 6.8 38.0001 6.8 37.4001V31.8001C6.8 31.6001 6.6 31.2001 6.4 31.2001L1.2 28.2001C0.6 27.8001 0 28.2001 0 28.8001V34.0001H0Z"
+                  fill="#091E42" />
+                <path
+                  d="M7.59985 31.4003V37.0003C7.59985 37.6003 8.19985 38.0003 8.79985 37.6003L13.7999 34.6003C14.1999 34.4003 14.3999 34.0003 14.3999 33.6003V28.0003C14.3999 27.4003 13.7999 27.0003 13.1999 27.4003L7.99985 30.8003C7.79985 31.0003 7.59985 31.2003 7.59985 31.4003Z"
+                  fill="#091E42" />
+                <path
+                  d="M13.2 26.7998L7.6 29.9998C7.4 30.1998 7 30.1998 6.8 29.9998L1.2 26.7998C0.6 26.3998 0.6 25.7998 1.2 25.3998L6.8 22.1998C7 21.9998 7.4 21.9998 7.6 22.1998L13.2 25.3998C13.6 25.7998 13.6 26.5998 13.2 26.7998Z"
+                  fill="#36B37E" />
+                <path
+                  d="M24.2002 34.0001C24.2002 34.4001 24.4002 34.8001 24.8002 35.0001L29.8002 38.0001C30.4002 38.4001 31.0002 38.0001 31.0002 37.4001V31.8001C31.0002 31.6001 30.8002 31.2001 30.6002 31.2001L25.4002 28.2001C24.8002 27.8001 24.2002 28.2001 24.2002 28.8001V34.0001Z"
+                  fill="#091E42" />
+                <path
+                  d="M31.5999 31.4003V37.0003C31.5999 37.6003 32.1999 38.0003 32.7999 37.6003L37.7999 34.6003C38.1999 34.4003 38.3999 34.0003 38.3999 33.6003V28.0003C38.3999 27.4003 37.7999 27.0003 37.1999 27.4003L31.9999 30.8003C31.7999 31.0003 31.5999 31.2003 31.5999 31.4003Z"
+                  fill="#091E42" />
+                <path
+                  d="M37.2 26.7998L31.6 29.9998C31.4 30.1998 31 30.1998 30.8 29.9998L25.2 26.7998C24.6 26.3998 24.6 25.7998 25.2 25.3998L30.8 22.1998C31 21.9998 31.4 21.9998 31.6 22.1998L37.2 25.3998C37.8 25.7998 37.8 26.5998 37.2 26.7998Z"
+                  fill="#36B37E" />
+                <path
+                  d="M0 11.8005C0 12.2005 0.2 12.6005 0.6 12.8005L5.6 15.8005C6 16.0005 6.8 15.6005 6.8 15.0005V9.20046C6.8 9.00046 6.6 8.60046 6.4 8.60046L1.2 5.60046C0.6 5.40046 0 5.60046 0 6.40046V11.8005Z"
+                  fill="#091E42" />
+                <path
+                  d="M7.59985 9.19968V14.7997C7.59985 15.3997 8.19985 15.7997 8.79985 15.3997L13.7999 12.3997C14.1999 12.1997 14.3999 11.7997 14.3999 11.3997V6.39968C14.3999 5.79968 13.7999 5.39968 13.1999 5.79968L7.99985 8.59968C7.79985 8.79968 7.59985 8.99968 7.59985 9.19968Z"
+                  fill="#091E42" />
+                <path
+                  d="M13.2 4.6L7.6 7.8C7.4 8 7 8 6.8 7.8L1.2 4.6C0.6 4.2 0.6 3.6 1.2 3.2L6.8 0C7 0 7.4 0 7.6 0.2L13.2 3.4C13.6 3.6 13.6 4.4 13.2 4.6Z"
+                  fill="#36B37E" />
+                <path
+                  d="M24.2002 11.8005C24.2002 12.2005 24.4002 12.6005 24.8002 12.8005L29.8002 15.8005C30.4002 16.2005 31.0002 15.8005 31.0002 15.2005V9.20047C31.0002 9.00047 30.8002 8.60047 30.6002 8.60047L25.4002 5.60047C24.8002 5.20047 24.2002 5.60047 24.2002 6.20047V11.8005Z"
+                  fill="#091E42" />
+                <path
+                  d="M31.5999 9.19968V14.7997C31.5999 15.3997 32.1999 15.7997 32.7999 15.3997L37.7999 12.3997C38.1999 12.1997 38.3999 11.7997 38.3999 11.3997V6.39968C38.3999 5.79968 37.7999 5.39968 37.1999 5.79968L31.9999 8.59968C31.7999 8.79968 31.5999 8.99968 31.5999 9.19968Z"
+                  fill="#091E42" />
+                <path
+                  d="M37.2 4.5998L31.6 7.9998C31.4 7.9998 31.2 7.9998 30.8 7.9998L25.2 4.7998C24.6 4.3998 24.6 3.7998 25.2 3.3998L30.8 0.199805C31 -0.00019531 31.4 -0.00019531 31.6 0.199805L37.2 3.3998C37.8 3.5998 37.8 4.3998 37.2 4.5998Z"
+                  fill="#36B37E" />
+              </svg>
+            </a>
+          </div>
+          <div class="details-container">
+            <h3>Frameworks</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--white">React</li>
+              <li class="skill-tag skill-tag--white">Bootstrap</li>
+              <li class="skill-tag skill-tag--white">Ruby on Rails</li>
+              <li class="skill-tag skill-tag--white">Selenium</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon-container">
+            <a href="#" class="skill-icon-wrapper">
+              <svg class="skill-icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_34_2481)">
+                  <path
+                    d="M20.1996 4H29.1996C30.3996 4 31.1996 5.2 30.9996 6.4L26.5996 20.8H31.1996C32.5996 20.8 33.5996 22.2 32.9996 23.6L23.9996 42C23.5996 42.6 22.5996 42.4 22.7996 41.6L24.9996 27.6H17.9996C16.7996 27.6 15.9996 26.6 16.1996 25.4L18.3996 5.8C18.3996 4.8 19.1996 4 20.1996 4Z"
+                    fill="#36B37E" />
+                  <path
+                    d="M2.43662 16.6706L5.64445 14.8185C6.07216 14.5716 6.60763 14.8406 6.78668 15.3153L8.22241 21.4238L9.86196 20.4772C10.361 20.1891 11.0094 20.4892 11.0876 21.1185L11.7183 29.6189C11.7009 29.9181 11.3027 30.0516 11.2071 29.7214L9.07068 24.2101L6.57571 25.6506C6.14799 25.8975 5.65424 25.7008 5.4752 25.2261L2.17055 17.6914C1.96194 17.33 2.08019 16.8764 2.43662 16.6706Z"
+                    fill="#091E42" />
+                  <path
+                    d="M46.6256 16.6706L43.4178 14.8185C42.9901 14.5716 42.4546 14.8406 42.2756 15.3153L40.8398 21.4238L39.2003 20.4772C38.7013 20.1891 38.0528 20.4892 37.9746 21.1185L37.344 29.6189C37.3614 29.9181 37.7595 30.0516 37.8552 29.7214L39.9916 24.2101L42.4866 25.6506C42.9143 25.8975 43.408 25.7008 43.5871 25.2261L46.8917 17.6914C47.1003 17.33 46.9821 16.8764 46.6256 16.6706Z"
+                    fill="#091E42" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_34_2481">
+                    <rect width="48" height="48" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="details-container">
+            <h3>Skills</h3>
+            <ul class="skills">
+              <li class="skill-tag skill-tag--white">Code kit</li>
+              <li class="skill-tag skill-tag--white">Github</li>
+              <li class="skill-tag skill-tag--white">Code-pen</li>
+              <li class="skill-tag skill-tag--white">Gitlab</li>
+              <li class="skill-tag skill-tag--white">Terminal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container row">
+      <div class="form-container">
+        <h2 class="heading-secondary heading-secondary--blue">
+          I'm always interested in hearing about new projects, so if you'd
+          like to chat please get in touch.
+        </h2>
+        <form action="https://formspree.io/f/myyvwvbw" method="POST">
+          <input type="text" name="name" id="name" placeholder="Full name" maxlength="30" required />
+          <input type="email" name="email" id="email" placeholder="Email address" required />
+          <textarea name="message" id="user-message" cols="30" rows="10" maxlength="500" placeholder="Enter Text Here"
+            required></textarea>
+          <button type="submit">Get in Touch</button>
+        </form>
+      </div>
+      <div class="social-links">
+        <a href="#">
+          <object data="./img/twitter.svg" type="image/svg+xml"></object>
+        </a>
+        <a href="#">
+          <object data="./img/linkedin.svg" type="image/svg+xml"></object>
+        </a>
+        <a href="#">
+          <object data="./img/medium.svg" type="image/svg+xml"></object>
+        </a>
+        <a href="#">
+          <object data="./img/github.svg" type="image/svg+xml"></object>
+        </a>
+        <a href="#">
+          <object data="./img/angellist.svg" type="image/svg+xml"></object>
+        </a>
+      </div>
+      <a class="footer-email" href="mailto:myemailhere@email.com">myemailhere@email.com</a>
+    </div>
+  </footer>
+</body>
+
 </html>
