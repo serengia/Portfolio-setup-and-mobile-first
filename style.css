@@ -460,11 +460,11 @@ form button {
   padding-bottom: 2rem;
 }
 
-.my-footer-email {
+.footer-email {
   text-decoration: none;
   font-weight: 400;
-  font-size: 4rem;
-  line-height: 32px;
+  font-size: 1.8rem;
+  line-height: 1;
   color: #42526e;
   display: block;
   text-align: center;
@@ -508,6 +508,10 @@ form button {
   .works-container,
   .about-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .footer-email {
+    font-size: 3rem;
   }
 }
 
