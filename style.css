@@ -43,8 +43,24 @@ body {
   margin-bottom: 4rem;
 }
 
-.m-b-rl {
+.m-b-xl {
   margin-bottom: 6rem;
+}
+
+.m-t-s {
+  margin-top: 2rem;
+}
+
+.m-t-m {
+  margin-top: 3rem;
+}
+
+.m-t-l {
+  margin-top: 4rem;
+}
+
+.m-t-xl {
+  margin-top: 6rem;
 }
 
 .menu-icon {
@@ -106,8 +122,8 @@ body {
 .menu-list {
   list-style: none;
   display: none;
-  gap: 3rem;
-  justify-content: space-around;
+  gap: 2.4rem;
+  justify-content: center;
   flex: 1;
 }
 
@@ -368,7 +384,7 @@ footer {
     ),
     url("./img/illustration-contact-form.svg") no-repeat bottom right;
   background-size: 15%;
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .footer-container {
@@ -459,14 +475,14 @@ form button {
 .form-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
-.my-footer-email {
+.footer-email {
   text-decoration: none;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.8rem;
+  line-height: 1;
   color: #42526e;
   display: block;
   text-align: center;
@@ -494,8 +510,17 @@ form button {
     font-size: 3rem;
   }
 
+  .section-about {
+    background-image: url("/img/about-bg.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   .description-text {
     font-size: 2.4rem;
+    width: 70%;
+    margin: 0 auto;
   }
 
   .scroll-btn-container {
@@ -511,13 +536,38 @@ form button {
   .about-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
+
+  form button {
+    align-self: flex-start;
+  }
+
+  .footer-email {
+    font-size: 3rem;
+  }
+
+  footer {
+    background:
+      linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("./img/footer-bg.png") no-repeat bottom;
+    background-size: contain;
+    padding: 0 0;
+  }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 6rem 0;
+  }
+
   .form-container {
     flex-direction: row;
     align-items: center;
     gap: 4rem;
+    padding-bottom: 4rem;
   }
 
   .footer-container .heading-secondary {
