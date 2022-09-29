@@ -140,8 +140,7 @@ body {
 }
 
 .section-hero {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -220,11 +219,11 @@ body {
 
 .button-primary {
   background-color: var(--color-secondary);
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
 
 .button-primary:hover {
-  background-color: #36b37f;
+  background-color: #49b889;
 }
 
 .social-icons {
@@ -376,8 +375,7 @@ body {
 }
 
 footer {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -546,8 +544,7 @@ form button {
   }
 
   footer {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
