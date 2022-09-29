@@ -113,6 +113,21 @@ body {
   font-weight: 600;
 }
 
+.logo a {
+  animation: logoRotate 1s linear;
+  transform-origin: center;
+  display: inline-block;
+}
+
+@keyframes logoRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
