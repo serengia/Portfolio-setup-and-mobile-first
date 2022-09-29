@@ -98,6 +98,12 @@ body {
   flex: 1;
 }
 
+.logo a {
+  animation: logoRotate 1s linear;
+  transform-origin: center;
+  display: inline-block;
+}
+
 .logo a:link,
 .logo a:visited {
   text-decoration: none;
@@ -111,6 +117,16 @@ body {
 .logo a:active {
   color: #172b4d;
   font-weight: 600;
+}
+
+@keyframes logoRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav {
@@ -220,11 +236,11 @@ body {
 
 .button-primary {
   background-color: var(--color-secondary);
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
 
 .button-primary:hover {
-  background-color: #36b37f;
+  background-color: #49b889;
 }
 
 .social-icons {
@@ -307,7 +323,7 @@ body {
   transition: transform 0.3s ease-out;
 }
 
-.work .image-container img:hover {
+.work:hover .image-container img {
   transform: scale(1.1);
 }
 
@@ -587,6 +603,26 @@ form button {
   .footer-container .social-links {
     border-top: solid 1px rgba(204, 204, 204, 0.677);
     padding-top: 4rem;
+  }
+
+  .work,
+  .skill {
+    transition: all 0.3s ease;
+  }
+
+  .work:hover,
+  .skill:hover {
+    transform: translateY(-0.8rem);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    transition: all 0.3s ease-in-out;
+  }
+
+  input:hover::placeholder,
+  textarea:hover::placeholder {
+    transform: translateX(0.5rem);
   }
 }
 
