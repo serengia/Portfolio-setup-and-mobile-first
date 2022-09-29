@@ -124,7 +124,8 @@ body {
 }
 
 .section-hero {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -359,7 +360,8 @@ body {
 }
 
 footer {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
