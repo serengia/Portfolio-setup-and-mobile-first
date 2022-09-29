@@ -124,8 +124,7 @@ body {
 }
 
 .section-hero {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -360,15 +359,14 @@ body {
 }
 
 footer {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
     url("./img/illustration-contact-form.svg") no-repeat bottom right;
   background-size: 15%;
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .footer-container {
@@ -459,13 +457,13 @@ form button {
 .form-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .my-footer-email {
   text-decoration: none;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 4rem;
   line-height: 32px;
   color: #42526e;
   display: block;
@@ -513,11 +511,16 @@ form button {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 6rem 0;
+  }
+
   .form-container {
     flex-direction: row;
     align-items: center;
     gap: 4rem;
+    padding-bottom: 4rem;
   }
 
   .footer-container .heading-secondary {
