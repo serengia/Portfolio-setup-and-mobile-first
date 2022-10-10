@@ -86,11 +86,13 @@ body {
 .visible {
   visibility: visible;
   opacity: 1;
+  transition: all .5s;
 }
 
 .hidden {
   visibility: hidden;
   opacity: 0;
+  transition: all .5s;
 }
 
 .margin-left {
