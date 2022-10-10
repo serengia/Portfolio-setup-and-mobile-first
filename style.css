@@ -312,6 +312,7 @@ body {
   border-radius: 0.6rem;
   overflow: hidden;
   border: 1px solid #dfe3e2;
+  transition: box-shadow 0.3s ease-out;
 }
 
 .work .image-container {
@@ -326,6 +327,10 @@ body {
 
 .work:hover .image-container img {
   transform: scale(1.1);
+}
+
+.work:hover {
+  box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.08);
 }
 
 .details-container {
@@ -604,16 +609,6 @@ form button {
   .footer-container .social-links {
     border-top: solid 1px rgba(204, 204, 204, 0.677);
     padding-top: 4rem;
-  }
-
-  .work,
-  .skill {
-    transition: all 0.3s ease;
-  }
-
-  .work:hover,
-  .skill:hover {
-    transform: translateY(-0.8rem);
   }
 
   input::placeholder,
