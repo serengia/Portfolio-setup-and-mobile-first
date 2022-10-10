@@ -67,7 +67,6 @@ body {
 .menu-icons-container {
   height: 100%;
   width: fit-content;
-
   justify-self: stretch;
   z-index: 900;
 }
@@ -86,13 +85,13 @@ body {
 .visible {
   visibility: visible;
   opacity: 1;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .margin-left {
@@ -114,8 +113,6 @@ body {
   top: 0;
   left: 0;
   z-index: 600;
-
-  position: relative;
 }
 
 .header-content {
@@ -168,10 +165,8 @@ body {
 
 .menu-list {
   list-style: none;
-  gap: 2.4rem;
   justify-content: center;
   flex: 1;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -180,7 +175,6 @@ body {
   padding-top: 4rem;
   padding-left: 20%;
   padding-bottom: 4rem;
-
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -199,7 +193,8 @@ body {
 }
 
 .section-hero {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -439,7 +434,8 @@ body {
 }
 
 footer {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -556,11 +552,9 @@ form button {
     display: flex;
     position: relative;
     flex-direction: row;
-
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 0;
-
     visibility: visible;
     opacity: 1;
   }
@@ -617,7 +611,8 @@ form button {
   }
 
   footer {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
