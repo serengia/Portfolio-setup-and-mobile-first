@@ -64,10 +64,36 @@ body {
   margin-top: 6rem;
 }
 
+.menu-icons-container {
+  height: 100%;
+  width: fit-content;
+
+  justify-self: stretch;
+  z-index: 900;
+}
+
 .menu-icon {
   width: 2rem;
   height: 1.6rem;
   fill: var(--color-primary);
+  cursor: pointer;
+}
+
+.menu-icon-open {
+  margin-right: -26px;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.margin-left {
   margin-left: auto;
 }
 
@@ -85,7 +111,9 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 900;
+  z-index: 600;
+
+  position: relative;
 }
 
 .header-content {
@@ -100,7 +128,7 @@ body {
 }
 
 .logo a {
-  animation: logoRotate 1s linear;
+  /* animation: logoRotate 1s linear; */
   transform-origin: center;
   display: inline-block;
 }
@@ -138,10 +166,22 @@ body {
 
 .menu-list {
   list-style: none;
-  display: none;
   gap: 2.4rem;
   justify-content: center;
   flex: 1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 4rem;
+  padding-left: 20%;
+  padding-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .menu-link:link,
@@ -157,8 +197,7 @@ body {
 }
 
 .section-hero {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -398,8 +437,7 @@ body {
 }
 
 footer {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -514,6 +552,15 @@ form button {
 @media screen and (min-width: 600px) {
   .menu-list {
     display: flex;
+    position: relative;
+    flex-direction: row;
+
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    visibility: visible;
+    opacity: 1;
   }
 
   .menu-icon {
@@ -568,8 +615,7 @@ form button {
   }
 
   footer {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
