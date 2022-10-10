@@ -74,7 +74,7 @@ body {
 .menu-icon {
   width: 2rem;
   height: 1.6rem;
-  fill: var(--color-primary);
+  fill: #3a4a42;
   cursor: pointer;
 }
 
@@ -85,13 +85,11 @@ body {
 .visible {
   visibility: visible;
   opacity: 1;
-  transition: all 0.5s;
 }
 
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s;
 }
 
 .margin-left {
@@ -136,7 +134,7 @@ body {
 .logo a:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: var(--color-primary);
+  color: #3a4a42;
   font-weight: 600;
   transition: all 0.2s;
 }
@@ -177,14 +175,20 @@ body {
   padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 3rem;
+
+  min-height: 75.5rem;
+  border-radius: 0 0 3rem 3rem;
+  box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 .menu-link:link,
 .menu-link:visited {
   text-decoration: none;
-  color: var(--color-primary);
+  color: #3a4a42;
   font-weight: 600;
+  font-size: 3.2rem;
 }
 
 .menu-link:hover,
@@ -193,8 +197,7 @@ body {
 }
 
 .section-hero {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -434,8 +437,7 @@ body {
 }
 
 footer {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -557,6 +559,15 @@ form button {
     padding-bottom: 0;
     visibility: visible;
     opacity: 1;
+    min-height: auto;
+    border-radius: none;
+    justify-content: center;
+    box-shadow: none;
+  }
+
+  .menu-link:link,
+  .menu-link:visited {
+    font-size: 2rem;
   }
 
   .menu-icon {
@@ -611,8 +622,7 @@ form button {
   }
 
   footer {
-    background:
-      linear-gradient(
+    background: linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
