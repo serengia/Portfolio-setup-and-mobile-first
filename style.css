@@ -163,7 +163,6 @@ body {
 
 .menu-list {
   list-style: none;
-  justify-content: center;
   flex: 1;
   position: absolute;
   top: 0;
@@ -177,7 +176,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   gap: 3rem;
-
   min-height: 75.5rem;
   border-radius: 0 0 3rem 3rem;
   box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.05);
@@ -197,7 +195,8 @@ body {
 }
 
 .section-hero {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -437,7 +436,8 @@ body {
 }
 
 footer {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -622,7 +622,8 @@ form button {
   }
 
   footer {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
