@@ -20,3 +20,16 @@ openBtn.addEventListener("click", openElements);
 closeBtn.addEventListener("click", closeElements);
 
 menuListContainer.addEventListener("click", closeElements);
+
+// SCROLLING EFFECT
+const menuLinks = document.querySelectorAll(".menu-link");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    document
+      .getElementById(e.target.getAttribute("href").replace("#", ""))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
