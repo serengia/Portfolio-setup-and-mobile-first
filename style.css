@@ -64,10 +64,35 @@ body {
   margin-top: 6rem;
 }
 
+.menu-icons-container {
+  height: 100%;
+  width: fit-content;
+  justify-self: stretch;
+  z-index: 900;
+}
+
 .menu-icon {
   width: 2rem;
   height: 1.6rem;
-  fill: var(--color-primary);
+  fill: #3a4a42;
+  cursor: pointer;
+}
+
+.menu-icon-open {
+  margin-right: -26px;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.margin-left {
   margin-left: auto;
 }
 
@@ -85,7 +110,7 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 900;
+  z-index: 600;
 }
 
 .header-content {
@@ -100,7 +125,7 @@ body {
 }
 
 .logo a {
-  animation: logoRotate 1s linear;
+  /* animation: logoRotate 1s linear; */
   transform-origin: center;
   display: inline-block;
 }
@@ -109,7 +134,7 @@ body {
 .logo a:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: var(--color-primary);
+  color: #3a4a42;
   font-weight: 600;
   transition: all 0.2s;
 }
@@ -138,17 +163,28 @@ body {
 
 .menu-list {
   list-style: none;
-  display: none;
-  gap: 2.4rem;
-  justify-content: center;
   flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 4rem;
+  padding-left: 20%;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3rem;
+  min-height: 100vh;
 }
 
 .menu-link:link,
 .menu-link:visited {
   text-decoration: none;
-  color: var(--color-primary);
+  color: #3a4a42;
   font-weight: 600;
+  font-size: 3.2rem;
 }
 
 .menu-link:hover,
@@ -514,6 +550,20 @@ form button {
 @media screen and (min-width: 600px) {
   .menu-list {
     display: flex;
+    position: relative;
+    flex-direction: row;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    visibility: visible;
+    opacity: 1;
+    min-height: auto;
+    justify-content: center;
+  }
+
+  .menu-link:link,
+  .menu-link:visited {
+    font-size: 2rem;
   }
 
   .menu-icon {
