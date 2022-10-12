@@ -113,10 +113,8 @@ const generateModalMarkup = (data) => {
 
 const openModal = (id) => {
   const activeModalData = projectData.find((el) => el.id === `${id}`);
-  console.log(activeModalData);
 
   const modal = generateModalMarkup(activeModalData);
-  // sectionHero.scrollIntoView({ behavior: "auto" });
   document.querySelector(".modal-container").innerHTML = modal;
 };
 
