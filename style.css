@@ -126,6 +126,12 @@ body {
   width: 2.6rem;
 }
 
+.logo a {
+  animation: logoRotate 1s linear;
+  transform-origin: center;
+  display: inline-block;
+}
+
 .title-box a:link,
 .title-box a:visited {
   text-decoration: none;
@@ -188,12 +194,6 @@ body {
 .logo {
   margin-right: auto;
   flex: 1;
-}
-
-.logo a {
-  /* animation: logoRotate 1s linear; */
-  transform-origin: center;
-  display: inline-block;
 }
 
 .logo a:link,
