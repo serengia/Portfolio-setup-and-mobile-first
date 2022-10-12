@@ -73,7 +73,7 @@ body {
   background-color: #c1c7d0;
   z-index: 1000;
   padding: 6rem 0;
-  height: 1000px;
+  height: 100%;
 }
 
 .modal-container {
@@ -81,30 +81,41 @@ body {
 }
 
 .modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
-  padding: 2rem;
+  padding: 4rem 2rem 3rem 2rem;
   background-color: #fff;
   border-radius: 1rem;
   margin: 0 auto;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-  height: 50%;
-  overflow: auto;
+  height: 80%;
+  /* overflow: auto; */
 }
 
 .modal-close-icon {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
+  grid-column: 1 / span 2;
+  /* grid-row:1; */
+  /* top: 1rem;
+  right: 2rem; */
   cursor: pointer;
 }
 
 .modal-img {
-  width: 100%;
+  grid-column: 1 / span 2 ;
+  width: 50%;
+
+}
+
+.button-container {
+  grid-row: 5 / 5;
 }
 
 .button-container-1 {
   display: none;
+}
+
+.modal>h2 {
+  grid-column: 1 / span 2;
 }
 
 .modal-skills {
