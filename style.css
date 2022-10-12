@@ -29,7 +29,6 @@ body {
   font-weight: 400;
   width: 100%;
   overflow-x: hidden;
-
   position: relative;
 }
 
@@ -71,10 +70,8 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-
   background-color: #c1c7d0;
   z-index: 1000;
-
   padding: 6rem 0;
   height: 1000px;
 }
@@ -121,7 +118,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
   padding: 1rem 0;
 }
 
@@ -129,16 +125,18 @@ body {
   display: inline-block;
   width: 2.6rem;
 }
+
 .title-box a:link,
-a:visited {
+.title-box a:visited {
   text-decoration: none;
   background-color: var(--color-secondary);
   padding: 0.8rem 2rem;
   border-radius: 0.6rem;
   color: #fff;
 }
+
 .title-box a:hover,
-a:active {
+.title-box a:active {
   background-color: var(--color-secondary);
 }
 
@@ -261,7 +259,8 @@ a:active {
 }
 
 .section-hero {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -501,7 +500,8 @@ a:active {
 }
 
 footer {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -706,7 +706,8 @@ form button {
   }
 
   footer {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
