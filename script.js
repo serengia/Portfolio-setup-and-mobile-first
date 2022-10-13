@@ -1,85 +1,85 @@
-const openBtn = document.querySelector('.menu-icon-open');
-const closeBtn = document.querySelector('.menu-icon-close');
-const menuListContainer = document.querySelector('.menu-list');
-const projectContainer = document.querySelector('.works-container');
-const modalContainer = document.querySelector('.modal-container');
+const openBtn = document.querySelector(".menu-icon-open");
+const closeBtn = document.querySelector(".menu-icon-close");
+const menuListContainer = document.querySelector(".menu-list");
+const projectContainer = document.querySelector(".works-container");
+const modalContainer = document.querySelector(".modal-container");
 
 const openElements = () => {
-	openBtn.classList.add('hidden');
-	closeBtn.classList.remove('hidden');
-	closeBtn.classList.add('visible');
-	menuListContainer.classList.remove('hidden');
+  openBtn.classList.add("hidden");
+  closeBtn.classList.remove("hidden");
+  closeBtn.classList.add("visible");
+  menuListContainer.classList.remove("hidden");
 };
 
 const closeElements = () => {
-	closeBtn.classList.add('hidden');
-	openBtn.classList.remove('hidden');
-	openBtn.classList.add('visible');
-	menuListContainer.classList.add('hidden');
+  closeBtn.classList.add("hidden");
+  openBtn.classList.remove("hidden");
+  openBtn.classList.add("visible");
+  menuListContainer.classList.add("hidden");
 };
 
-openBtn.addEventListener('click', openElements);
-closeBtn.addEventListener('click', closeElements);
+openBtn.addEventListener("click", openElements);
+closeBtn.addEventListener("click", closeElements);
 
-menuListContainer.addEventListener('click', closeElements);
+menuListContainer.addEventListener("click", closeElements);
 
 const projectData = [
-	{
-		id: '1',
-		name: 'Real estate project',
-		technologies: ['Ruby', 'HTML', 'CSS', 'Javascript'],
-		image: './img/real-estate.jpg',
-		link: 'https://serengia.github.io/Portfolio-setup-and-mobile-first/',
-		linkSource: 'https://github.com/Serengia/Portfolio-setup-and-mobile-first',
-	},
-	{
-		id: '2',
-		name: 'Human Resource System',
-		technologies: ['Ruby', 'HTML', 'CSS', 'Javascript'],
-		image: './img/human-resource-system.jpg',
-		link: 'https://serengia.github.io/Portfolio-setup-and-mobile-first/',
-		linkSource: 'https://github.com/Serengia/Portfolio-setup-and-mobile-first',
-	},
-	{
-		id: '3',
-		name: 'Design Firm Project',
-		technologies: ['Ruby', 'HTML', 'CSS', 'Javascript'],
-		image: './img/design-firm.jpg',
-		link: 'https://serengia.github.io/Portfolio-setup-and-mobile-first/',
-		linkSource: 'https://github.com/Serengia/Portfolio-setup-and-mobile-first',
-	},
-	{
-		id: '4',
-		name: 'Logistics Web Application',
-		technologies: ['Ruby', 'HTML', 'CSS', 'Javascript'],
-		image: './img/logistics.jpg',
-		link: 'https://serengia.github.io/Portfolio-setup-and-mobile-first/',
-		linkSource: 'https://github.com/Serengia/Portfolio-setup-and-mobile-first',
-	},
-	{
-		id: '5',
-		name: 'Saas Legacy Code Update',
-		technologies: ['Ruby', 'HTML', 'CSS', 'Javascript'],
-		image: './img/legacy-code-update.jpg',
-		link: 'https://serengia.github.io/Portfolio-setup-and-mobile-first/',
-		linkSource: 'https://github.com/Serengia/Portfolio-setup-and-mobile-first',
-	},
-	{
-		id: '6',
-		name: 'School Software System',
-		technologies: ['Ruby', 'Javascript'],
-		image: './img/web-development.jpg',
-		link: 'https://serengia.github.io/Portfolio-setup-and-mobile-first/',
-		linkSource: 'https://github.com/Serengia/Portfolio-setup-and-mobile-first',
-	},
+  {
+    id: "1",
+    name: "Real estate project",
+    technologies: ["Ruby", "HTML", "CSS", "Javascript"],
+    image: "./img/real-estate.jpg",
+    link: "https://serengia.github.io/Portfolio-setup-and-mobile-first/",
+    linkSource: "https://github.com/Serengia/Portfolio-setup-and-mobile-first",
+  },
+  {
+    id: "2",
+    name: "Human Resource System",
+    technologies: ["Ruby", "HTML", "CSS", "Javascript"],
+    image: "./img/human-resource-system.jpg",
+    link: "https://serengia.github.io/Portfolio-setup-and-mobile-first/",
+    linkSource: "https://github.com/Serengia/Portfolio-setup-and-mobile-first",
+  },
+  {
+    id: "3",
+    name: "Design Firm Project",
+    technologies: ["Ruby", "HTML", "CSS", "Javascript"],
+    image: "./img/design-firm.jpg",
+    link: "https://serengia.github.io/Portfolio-setup-and-mobile-first/",
+    linkSource: "https://github.com/Serengia/Portfolio-setup-and-mobile-first",
+  },
+  {
+    id: "4",
+    name: "Logistics Web Application",
+    technologies: ["Ruby", "HTML", "CSS", "Javascript"],
+    image: "./img/logistics.jpg",
+    link: "https://serengia.github.io/Portfolio-setup-and-mobile-first/",
+    linkSource: "https://github.com/Serengia/Portfolio-setup-and-mobile-first",
+  },
+  {
+    id: "5",
+    name: "Saas Legacy Code Update",
+    technologies: ["Ruby", "HTML", "CSS", "Javascript"],
+    image: "./img/legacy-code-update.jpg",
+    link: "https://serengia.github.io/Portfolio-setup-and-mobile-first/",
+    linkSource: "https://github.com/Serengia/Portfolio-setup-and-mobile-first",
+  },
+  {
+    id: "6",
+    name: "School Software System",
+    technologies: ["Ruby", "Javascript"],
+    image: "./img/web-development.jpg",
+    link: "https://serengia.github.io/Portfolio-setup-and-mobile-first/",
+    linkSource: "https://github.com/Serengia/Portfolio-setup-and-mobile-first",
+  },
 ];
 
 const generateModalMarkup = (data) => {
-	const listMarkup = data.technologies
-		.map((item) => `<li class="skill-tag skill-tag--grey">${item}</li>`)
-		.join('');
+  const listMarkup = data.technologies
+    .map((item) => `<li class="skill-tag skill-tag--grey">${item}</li>`)
+    .join("");
 
-	const modalMarkup = ` 
+  const modalMarkup = ` 
   <div class="backdrop">
 
   <div class="modal">
@@ -108,22 +108,22 @@ const generateModalMarkup = (data) => {
   </div>
 </div>`;
 
-	return modalMarkup;
+  return modalMarkup;
 };
 
 const openModal = (id) => {
-	const activeModalData = projectData.find((el) => el.id === `${id}`);
+  const activeModalData = projectData.find((el) => el.id === `${id}`);
 
-	const modal = generateModalMarkup(activeModalData);
-	document.querySelector('.modal-container').innerHTML = modal;
+  const modal = generateModalMarkup(activeModalData);
+  document.querySelector(".modal-container").innerHTML = modal;
 };
 
 const markup = (data) => {
-	const listMarkup = data.technologies
-		.map((item) => `<li class="skill-tag skill-tag--grey">${item}</li>`)
-		.join('');
+  const listMarkup = data.technologies
+    .map((item) => `<li class="skill-tag skill-tag--grey">${item}</li>`)
+    .join("");
 
-	const markup = `<div class="work">
+  const markup = `<div class="work">
   <div class="image-container">
     <img src="${data.image}" alt="${data.name}" />
   </div>
@@ -137,107 +137,129 @@ const markup = (data) => {
      
   </div>`;
 
-	return markup;
+  return markup;
 };
 
 const closeModal = (e) => {
-	const clicked = e.target.closest('.modal-close-icon');
-	if (!clicked) return;
-	document.querySelector('.modal-container').innerHTML = '';
+  const clicked = e.target.closest(".modal-close-icon");
+  if (!clicked) return;
+  document.querySelector(".modal-container").innerHTML = "";
 };
 
 const injectMarkup = () => {
-	let allProjectsMarkup = '';
+  let allProjectsMarkup = "";
 
-	projectData.forEach((item) => {
-		allProjectsMarkup += markup(item);
-	});
+  projectData.forEach((item) => {
+    allProjectsMarkup += markup(item);
+  });
 
-	projectContainer.insertAdjacentHTML('afterbegin', allProjectsMarkup);
+  projectContainer.insertAdjacentHTML("afterbegin", allProjectsMarkup);
 };
 
 injectMarkup();
 
-modalContainer.addEventListener('click', (e) => {
-	closeModal(e);
+modalContainer.addEventListener("click", (e) => {
+  closeModal(e);
 });
 
 // SUBMIT FORM
-const form = document.querySelector('.form');
-const feedbackEl = document.querySelector('.form-feedback');
-const SUBMIT_LINK = 'https://formspree.io/f/myyvwvbw';
+const form = document.querySelector(".form");
+const feedbackEl = document.querySelector(".form-feedback");
+const SUBMIT_LINK = "https://formspree.io/f/myyvwvbw";
 
 const clearUpNotice = () => {
-	setTimeout(() => {
-		feedbackEl.classList.remove('email-success');
-		feedbackEl.classList.remove('email-fail');
-		feedbackEl.textContent = '';
-	}, 3000);
+  setTimeout(() => {
+    feedbackEl.classList.remove("email-success");
+    feedbackEl.classList.remove("email-fail");
+    feedbackEl.textContent = "";
+  }, 3000);
 };
 
 const showSuccess = () => {
-	feedbackEl.classList.remove('email-fail');
-	feedbackEl.classList.add('email-success');
-	clearUpNotice();
+  feedbackEl.classList.remove("email-fail");
+  feedbackEl.classList.add("email-success");
+  clearUpNotice();
 };
 
 const showError = () => {
-	feedbackEl.classList.remove('email-success');
-	feedbackEl.classList.add('email-fail');
-	clearUpNotice();
+  feedbackEl.classList.remove("email-success");
+  feedbackEl.classList.add("email-fail");
+  clearUpNotice();
 };
 
 const handleSubmit = async (event) => {
-	event.preventDefault();
+  event.preventDefault();
 
-	// const name = event.target.name.value;
-	const email = event.target.email.value;
-	// const message = event.target.message.value;
+  // const name = event.target.name.value;
+  const email = event.target.email.value;
+  // const message = event.target.message.value;
 
-	const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+  const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
-	if (!emailRegex.test(email)) {
-		showError();
-		feedbackEl.textContent = 'Invalid Email (Email must be lowercase).';
-		return;
-	}
+  if (!emailRegex.test(email)) {
+    showError();
+    feedbackEl.textContent = "Invalid Email (Email must be lowercase).";
+    return;
+  }
 
-	const formData = new FormData(event.target);
+  const formData = new FormData(event.target);
 
-	try {
-		const response = await fetch(SUBMIT_LINK, {
-			method: form.method,
-			body: formData,
-			headers: {
-				Accept: 'application/json',
-			},
-		});
+  try {
+    const response = await fetch(SUBMIT_LINK, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
 
-		if (response.ok) {
-			// SUCCESS
-			showSuccess();
-			form.reset();
-			feedbackEl.textContent =
-				'Email successfully sent. We will get back to you soonest possible.';
-			return;
-		}
-		throw new Error('Oops! There was a problem submitting your form');
-	} catch (error) {
-		// Any other error
-		showError();
-		feedbackEl.textContent = `${error.message}`;
-	}
+    if (response.ok) {
+      // SUCCESS
+      showSuccess();
+      form.reset();
+      feedbackEl.textContent =
+        "Email successfully sent. We will get back to you soonest possible.";
+
+      // Clear local storage
+      if (localStorage.getItem("userFormData")) {
+        localStorage.clear();
+      }
+      return;
+    }
+    throw new Error("Oops! There was a problem submitting your form");
+  } catch (error) {
+    // Any other error
+    showError();
+    feedbackEl.textContent = `${error.message}`;
+  }
 };
 
-form.addEventListener('submit', handleSubmit);
+form.addEventListener("submit", handleSubmit);
 
-// Save to local
+// SAVING FORM USER INFO TO LOCAL
+const nameInputEl = document.querySelector(".name");
+const emailInputEl = document.querySelector(".email");
+const messageInputEl = document.querySelector(".message");
 
-function saveToLocal() {
-	//Implementation
-	console.log('Its working');
+const saveToLocal = () => {
+  const formInputs = {
+    name: nameInputEl.value,
+    email: emailInputEl.value,
+    message: messageInputEl.value,
+  };
+
+  localStorage.setItem("userFormData", JSON.stringify(formInputs));
+};
+
+[nameInputEl, emailInputEl, messageInputEl].forEach((input) => {
+  input.addEventListener("change", saveToLocal);
+});
+
+// On Page load, Check local storage and retreave data
+if (localStorage.getItem("userFormData")) {
+  const parsedFormData = JSON.parse(localStorage.getItem("userFormData"));
+
+  nameInputEl.value = parsedFormData.name;
+  emailInputEl.value = parsedFormData.email;
+  messageInputEl.value = parsedFormData.message;
 }
-
-form.elements[0].addEventListener('focus', saveToLocal);
-// form.elements[1].addEventListener('focus', saveToLocal);
-// form.elements[2].addEventListener('focus', saveToLocal);
