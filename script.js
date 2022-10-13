@@ -161,3 +161,72 @@ injectMarkup();
 modalContainer.addEventListener("click", (e) => {
   closeModal(e);
 });
+
+// SUBMIT FORM
+const form = document.querySelector(".form");
+const feedbackEl = document.querySelector(".form-feedback");
+const SUBMIT_LINK = "https://formspree.io/f/myyvwvbw";
+
+const clearUpNotice = () => {
+  setTimeout(() => {
+    feedbackEl.classList.remove("email-success");
+    feedbackEl.classList.remove("email-fail");
+    feedbackEl.textContent = "";
+  }, 3000);
+};
+
+const showSuccess = () => {
+  feedbackEl.classList.remove("email-fail");
+  feedbackEl.classList.add("email-success");
+  clearUpNotice();
+};
+
+const showError = () => {
+  feedbackEl.classList.remove("email-success");
+  feedbackEl.classList.add("email-fail");
+  clearUpNotice();
+};
+
+const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  // const name = event.target.name.value;
+  const email = event.target.email.value;
+  // const message = event.target.message.value;
+
+  const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+  if (!emailRegex.test(email)) {
+    showError();
+    feedbackEl.textContent = "Invalid Email (Email must be lowercase).";
+    return;
+  }
+
+  const formData = new FormData(event.target);
+
+  try {
+    const response = await fetch(SUBMIT_LINK, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      // SUCCESS
+      showSuccess();
+      form.reset();
+      feedbackEl.textContent =
+        "Email successfully sent. We will get back to you soonest possible.";
+      return;
+    }
+    throw new Error("Oops! There was a problem submitting your form");
+  } catch (error) {
+    // Any other error
+    showError();
+    feedbackEl.textContent = `${error.message}`;
+  }
+};
+
+form.addEventListener("submit", handleSubmit);
