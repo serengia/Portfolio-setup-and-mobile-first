@@ -198,7 +198,7 @@ const handleSubmit = async (event) => {
 
   if (!emailRegex.test(email)) {
     showError();
-    feedbackEl.textContent = "Invalid email";
+    feedbackEl.textContent = "Invalid Email (Email must be lowercase).";
     return;
   }
 
