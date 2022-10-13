@@ -632,6 +632,20 @@ form button {
   margin-top: 1.7rem;
 }
 
+.email-fail {
+  color: red;
+  border: 1px solid red;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.email-success {
+  color: green;
+  border: 1px solid green;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+}
+
 /* .modal-container {
 
 } */
