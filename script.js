@@ -219,6 +219,11 @@ const handleSubmit = async (event) => {
       form.reset();
       feedbackEl.textContent =
         "Email successfully sent. We will get back to you soonest possible.";
+
+      // Clear local storage
+      if (localStorage.getItem("userFormData")) {
+        localStorage.clear();
+      }
       return;
     }
     throw new Error("Oops! There was a problem submitting your form");
@@ -230,3 +235,31 @@ const handleSubmit = async (event) => {
 };
 
 form.addEventListener("submit", handleSubmit);
+
+// SAVING FORM USER INFO TO LOCAL
+const nameInputEl = document.querySelector(".name");
+const emailInputEl = document.querySelector(".email");
+const messageInputEl = document.querySelector(".message");
+
+const saveToLocal = () => {
+  const formInputs = {
+    name: nameInputEl.value,
+    email: emailInputEl.value,
+    message: messageInputEl.value,
+  };
+
+  localStorage.setItem("userFormData", JSON.stringify(formInputs));
+};
+
+[nameInputEl, emailInputEl, messageInputEl].forEach((input) => {
+  input.addEventListener("change", saveToLocal);
+});
+
+// On Page load, Check local storage and retreave data
+if (localStorage.getItem("userFormData")) {
+  const parsedFormData = JSON.parse(localStorage.getItem("userFormData"));
+
+  nameInputEl.value = parsedFormData.name;
+  emailInputEl.value = parsedFormData.email;
+  messageInputEl.value = parsedFormData.message;
+}
