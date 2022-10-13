@@ -161,3 +161,53 @@ injectMarkup();
 modalContainer.addEventListener("click", (e) => {
   closeModal(e);
 });
+
+// SUBMIT FORM
+const form = document.querySelector(".form");
+const feedbackEl = document.querySelector(".form-feedback");
+const SUBMIT_LINK = "https://formspree.io/f/myyvwvbw";
+
+const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  const name = event.target.name.value;
+  const email = event.target.email.value;
+  const message = event.target.message.value;
+
+  const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+  if (!emailRegex.test(email)) {
+    feedbackEl.style.color = "red";
+    feedbackEl.textContent = "Invalid email";
+    return;
+  }
+
+  const data = new FormData(event.target);
+  // data.append("name", name);
+  // data.append("email", email);
+  // data.append("message", message);
+
+  console.log(JSON.stringify(data));
+
+  // try {
+  //   const response = await fetch(SUBMIT_LINK, {
+  //     method: form.method,
+  //     body: data,
+  //     headers: {
+  //       Accept: "application/json",
+  //     },
+  //   });
+
+  //   if (!response.ok) {
+  //     throw new Error("Oops! There was a problem submitting your form");
+  //   }
+
+  //   console.log("SUCCESSFULLY SENT");
+
+  //   const data = await response.json();
+  // } catch (error) {
+  //   console.log(error);
+  // }
+};
+
+form.addEventListener("submit", handleSubmit);
