@@ -3,6 +3,7 @@ const closeBtn = document.querySelector(".menu-icon-close");
 const menuListContainer = document.querySelector(".menu-list");
 const projectContainer = document.querySelector(".works-container");
 const modalContainer = document.querySelector(".modal-container");
+const menuLinks = document.querySelectorAll(".menu-link");
 
 const openElements = () => {
   openBtn.classList.add("hidden");
@@ -222,7 +223,7 @@ const handleSubmit = async (event) => {
 
       // Clear local storage
       if (localStorage.getItem("userFormData")) {
-        localStorage.clear();
+        localStorage.removeItem("userFormData");
       }
       return;
     }
@@ -263,3 +264,12 @@ if (localStorage.getItem("userFormData")) {
   emailInputEl.value = parsedFormData.email;
   messageInputEl.value = parsedFormData.message;
 }
+
+// SMOOTH SCROLL
+menuLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const clickedID = e.target.getAttribute("href").replace("#", "");
+    document.getElementById(clickedID).scrollIntoView({ behavior: "smooth" });
+  });
+});
