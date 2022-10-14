@@ -113,7 +113,7 @@ const generateModalMarkup = (data) => {
 };
 
 const openModal = (id) => {
-  const activeModalData = projectData.find((el) => el.id === `${id}`);
+  const activeModalData = projectData.find((el) => el.id === id);
 
   const modal = generateModalMarkup(activeModalData);
   document.querySelector(".modal-container").innerHTML = modal;
