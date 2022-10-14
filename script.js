@@ -95,7 +95,7 @@ const generateModalMarkup = (data) => {
       <h2>${data.name}</h2>
       <div class="button-container ">
         <a href="${data.link}">See Live <img src="./img/modal-live-icon.svg" alt="Modal icon"></a>
-        <a href="${data.linkSource}">See source <img src="./img/modal-gihub-icon.svg" alt="Modal icon"> </a>
+        <a target="__blank" href="${data.linkSource}">Source Code <img src="./img/modal-gihub-icon.svg" alt="Modal icon"> </a>
       </div>
    
     <ul class="modal-skills">
@@ -272,4 +272,11 @@ menuLinks.forEach((link) => {
     const clickedID = e.target.getAttribute("href").replace("#", "");
     document.getElementById(clickedID).scrollIntoView({ behavior: "smooth" });
   });
+});
+
+// SCROLL TO BUTTON
+const scrollToBtn = document.getElementById("scroll-to");
+scrollToBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.getElementById("scroll-to").scrollIntoView({ behavior: "smooth" });
 });
