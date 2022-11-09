@@ -1,3 +1,5 @@
+![my-portfolio](https://user-images.githubusercontent.com/69452516/200860263-28c2604a-d0f0-4272-b30c-2eb6f1615631.png)
+
 # Portfolio: setup and mobile first
 
 This is a Portfolio setup and mobile first project with HTML & CSS. This project version is set up with html-css linters.
